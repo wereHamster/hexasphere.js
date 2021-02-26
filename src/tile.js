@@ -15,10 +15,10 @@ function vector(p1, p2){
 // Set Normal.z to (multiply U.x by V.y) minus (multiply U.y by V.x)
 function calculateSurfaceNormal(p1, p2, p3){
 
-    U = vector(p1, p2)
-    V = vector(p1, p3)
+    const U = vector(p1, p2)
+    const V = vector(p1, p3)
     
-    N = {
+    const N = {
         x: U.y * V.z - U.z * V.y,
         y: U.z * V.x - U.x * V.z,
         z: U.x * V.y - U.y * V.x
