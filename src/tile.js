@@ -1,5 +1,3 @@
-import { Point } from './point.js'
-
 function vector(p1, p2){
     return {
         x: p2.x - p1.x,
@@ -32,17 +30,6 @@ function calculateSurfaceNormal(p1, p2, p3){
 
 function pointingAwayFromOrigin(p, v){
     return ((p.x * v.x) >= 0) && ((p.y * v.y) >= 0) && ((p.z * v.z) >= 0)
-}
-
-function normalizeVector(v){
-    var m = Math.sqrt((v.x * v.x) + (v.y * v.y) + (v.z * v.z));
-
-    return {
-        x: (v.x/m),
-        y: (v.y/m),
-        z: (v.z/m)
-    };
-
 }
 
 var Tile = function(centerPoint, hexSize){
