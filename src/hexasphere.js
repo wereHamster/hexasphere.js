@@ -161,4 +161,11 @@ Hexasphere.prototype.toObj = function() {
     return objText;
 }
 
-export { Hexasphere }
+function newHexasphere(...args) {
+    return new Hexasphere(...args)
+}
+
+export {
+    Hexasphere,
+    newHexasphere
+}
