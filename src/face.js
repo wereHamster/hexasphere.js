@@ -1,4 +1,4 @@
-import { Point } from './point'
+import { Point } from './point.js'
 
 var _faceCount = 0;
 

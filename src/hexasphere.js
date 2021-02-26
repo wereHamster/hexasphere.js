@@ -1,6 +1,6 @@
-import { Tile } from './tile'
-import { Face } from './face'
-import { Point } from './point'
+import { Tile } from './tile.js'
+import { Face } from './face.js'
+import { Point } from './point.js'
 
 var Hexasphere = function(radius, numDivisions, hexSize){
 

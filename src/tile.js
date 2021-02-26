@@ -1,4 +1,4 @@
-import { Point } from './point'
+import { Point } from './point.js'
 
 function vector(p1, p2){
     return {
