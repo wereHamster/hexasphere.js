@@ -102,7 +102,7 @@ export class Tile {
         // this.boundary = [];
         return {
             centerPoint: this.centerPoint.toJson(),
-            boundary: this.boundary.map(function(point){return point.toJson()})
+            boundary: this.boundary.map(point => point.toJson())
         };
 
     }

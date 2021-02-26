@@ -116,7 +116,7 @@ class Hexasphere {
     toJson() {
         return JSON.stringify({
             radius: this.radius,
-            tiles: this.tiles.map(function(tile){return tile.toJson()})
+            tiles: this.tiles.map(tile => tile.toJson())
         });
     }
 

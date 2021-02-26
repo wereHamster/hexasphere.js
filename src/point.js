@@ -2,9 +2,9 @@
 export class Point {
     constructor (x,y,z) {
         if(x !== undefined && y !== undefined && z !== undefined){
-            this.x = x.toFixed(3);
-            this.y = y.toFixed(3);
-            this.z = z.toFixed(3);
+            this.x = x;
+            this.y = y;
+            this.z = z;
         }
 
         this.faces = [];
