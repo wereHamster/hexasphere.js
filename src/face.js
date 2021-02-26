@@ -3,18 +3,11 @@ import { Point } from './point.js'
 var _faceCount = 0;
 
 export class Face {
-    constructor(point1, point2, point3, register) {
+    constructor(point1, point2, point3, register = true) {
         this.id = _faceCount++;
 
-        if(register == undefined){
-            register = true;
-        }
-    
-        this.points = [
-            point1,
-            point2,
-            point3
-            ];
+        this.points = [ point1, point2, point3 ];
+
         if(register){
             point1.registerFace(this);
             point2.registerFace(this);
