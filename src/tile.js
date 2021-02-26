@@ -1,4 +1,4 @@
-var Point = require('./point');
+import { Point } from './point'
 
 function vector(p1, p2){
     return {
@@ -132,4 +132,4 @@ Tile.prototype.toString = function(){
     return this.centerPoint.toString();
 };
 
-module.exports = Tile;
+export { Tile }

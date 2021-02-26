@@ -119,4 +119,4 @@ Point.prototype.toString = function(){
     return '' + this.x + ',' + this.y + ',' + this.z;
 }
 
-module.exports = Point;
+export { Point }

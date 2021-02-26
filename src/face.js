@@ -1,4 +1,4 @@
-var Point = require('./point');
+import { Point } from './point'
 
 var _faceCount = 0;
 
@@ -72,4 +72,4 @@ Face.prototype.getCentroid = function(clear){
 
 }
 
-module.exports = Face;
+export { Face }

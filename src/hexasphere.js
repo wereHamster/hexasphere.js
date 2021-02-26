@@ -1,6 +1,6 @@
-var Tile = require('./tile'),
-    Face = require('./face'),
-    Point = require('./point');
+import { Tile } from './tile'
+import { Face } from './face'
+import { Point } from './point'
 
 var Hexasphere = function(radius, numDivisions, hexSize){
 
@@ -161,4 +161,4 @@ Hexasphere.prototype.toObj = function() {
     return objText;
 }
 
-module.exports = Hexasphere;
+export { Hexasphere }
