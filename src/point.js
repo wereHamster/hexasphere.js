@@ -44,7 +44,7 @@ export class Point {
     }
 
 
-    project(radius, percent){
+    project(radius, percent) {
         if(percent == undefined){
             percent = 1.0;
         }

@@ -34,7 +34,7 @@ function pointingAwayFromOrigin(p, v){
 
 export class Tile {
 
-    constructor (centerPoint, hexSize = 1){
+    constructor (centerPoint, hexSize = 1) {
         hexSize = Math.max(.01, Math.min(1.0, hexSize));
 
         this.centerPoint = centerPoint;
