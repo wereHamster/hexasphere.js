@@ -39,11 +39,10 @@ export class Face {
             for(var j =0 ; j< face2.points.length; j++){
                 if(this.points[i].toString() == face2.points[j].toString()){
                     count++;
-                    
                 }
             }
         }
-    
+
         return (count == 2);
     }
 
@@ -51,15 +50,15 @@ export class Face {
         if(this.centroid && !clear){
             return this.centroid;
         }
-    
+
         var x = (this.points[0].x + this.points[1].x + this.points[2].x)/3;
         var y = (this.points[0].y + this.points[1].y + this.points[2].y)/3;
         var z = (this.points[0].z + this.points[1].z + this.points[2].z)/3;
-    
+
         var centroid = new Point(x,y,z);
-    
+
         this.centroid = centroid;
-    
+
         return centroid;
     }
 }
