@@ -1,6 +1,9 @@
+let _pointCount = 0;
 
 export class Point {
     constructor (x,y,z) {
+        this.id = _pointCount++;
+
         if(x !== undefined && y !== undefined && z !== undefined){
             this.x = x;
             this.y = y;
