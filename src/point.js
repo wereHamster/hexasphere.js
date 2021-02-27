@@ -5,9 +5,9 @@ export class Point {
         this.id = _pointCount++;
 
         if(x !== undefined && y !== undefined && z !== undefined){
-            this.x = x;
-            this.y = y;
-            this.z = z;
+            this.x = +x.toFixed(3);
+            this.y = +y.toFixed(3);
+            this.z = +z.toFixed(3);
         }
 
         this.faces = [];
